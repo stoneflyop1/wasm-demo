@@ -15,7 +15,7 @@ async function run() {
     const hello = rust.passString(name);
     console.log(hello);
 
-    rust.run();
+    //rust.run();
 }
 
 
