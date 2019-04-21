@@ -1,3 +1,5 @@
+// https://rustwasm.github.io/wasm-bindgen/reference/types/number-slices.html
+
 use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen(js_name="numberSlice")]

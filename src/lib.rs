@@ -1,6 +1,7 @@
 
 pub mod mem;
 
+pub mod js;
 
 #[cfg(test)]
 mod tests {
