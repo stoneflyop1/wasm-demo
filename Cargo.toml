@@ -3,6 +3,9 @@ name = "wasm-demo"
 version = "0.1.0"
 authors = ["jeff <jefflyop1@gmail.com>"]
 edition = "2018"
+description = "rust wasm demo"
+repository = "https://github.com/stoneflyop1/wasm-demo.git"
+license = "MIT"
 
 [lib]
 crate-type=["cdylib"]
