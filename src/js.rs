@@ -2,6 +2,8 @@
 
 use wasm_bindgen::prelude::*;
 
+use crate::imports::log;
+
 #[wasm_bindgen(module = "/wasmjs.js")]
 extern "C" {
     fn hello() -> String;
@@ -21,11 +23,7 @@ extern "C" {
     fn render(this: &DemoJs) -> String;
 }
 
-#[wasm_bindgen]
-extern "C" {
-    #[wasm_bindgen(js_namespace = console)]
-    fn log(s: &str);
-}
+
 /// log from rust, use console.log from js, output will be prefixed with 'Test Import From JS'
 fn rust_log(mut s: String) {
     s.insert_str(0, "Test Import From JS");

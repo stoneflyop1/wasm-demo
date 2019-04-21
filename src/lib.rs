@@ -1,7 +1,8 @@
-
-
+#[macro_use]
+extern crate serde_derive;
 
 pub mod mem;
+pub mod imports;
 
 //// if expose mod js, wasm-pack test will fail.
 //pub mod js;

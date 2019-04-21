@@ -11,7 +11,12 @@ license = "MIT"
 crate-type=["cdylib"]
 
 [dependencies]
-wasm-bindgen = "0.2.42"
+serde = "1.0.90"
+serde_derive = "1.0.90"
+
+[dependencies.wasm-bindgen]
+version = "0.2.42"
+features = ["serde-serialize"]
 
 [dev-dependencies]
 wasm-bindgen-test = "0.2.42"
