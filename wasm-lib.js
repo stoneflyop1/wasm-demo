@@ -11,6 +11,10 @@ async function run() {
     const val = rust.updateNumSlice(a, 0, 3.3);
     console.log(`val: ${val}`, Math.abs(val-3.3)<1e-7);
 
+    const name = 'Jeff';
+    const hello = rust.passString(name);
+    console.log(hello);
+
     rust.run();
 }
 
